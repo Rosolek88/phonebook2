@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+class App extends React.Component { 
+  render() 
+  { 
+  return ( 
+  <div className="frame"> 
+  <div class="mainCalc"> 
+  <div className="button-row"> 
+    <Button label={'Clear'}/> 
+    <Button label={'Delete'}/> 
+    <Button label={'.'}/> 
+    <Button label={'/'}/> 
+  </div> 
+  <div className="button-row"> 
+    <Button label={'7'}/> 
+    <Button label={'8'}/> 
+    <Button label={'9'}/> 
+    <Button label={'*'}/> 
+  </div> 
+  <div className="button-row"> 
+    <Button label={'4'}/> 
+    <Button label={'5'}/> 
+    <Button label={'6'}/> 
+    <Button label={'-'}/> 
+  </div> 
+  <div className="button-row"> 
+    <Button label={'1'}/> 
+    <Button label={'2'}/> 
+    <Button label={'3'}/> 
+    <Button label={'+'}/> 
+  </div> 
+  <div className="button-row"> 
+    <Button label={'0'}/> 
+    <Button label={'='}/> 
+  </div> 
+  </div> 
+  </div> 
+  ); 
+} 
+} 
