@@ -29,8 +29,7 @@ class App extends React.Component {
             <ul className= 'lists'>
               {this.state.phone.map(function(todo) {
                     return <li>+44 {todo}</li>
-               })}
-              
+               })} 
             </ul>
           </div>
       )
